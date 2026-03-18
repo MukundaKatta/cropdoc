@@ -1,43 +1,18 @@
 # cropdoc
 
-**CropDoc — AI Crop Disease Detector. Computer vision for plant disease identification from leaf photos.**
+Stub Python project. Described as "AI Crop Disease Detector" using "computer vision for plant disease identification from leaf photos," but none of that functionality exists.
 
-![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
+## What's actually here
 
-## Install
-```bash
-pip install -e ".[dev]"
-```
+A single `Cropdoc` class in `src/core.py` with stub methods (detect, scan, monitor, alert, get_report, configure, get_stats, reset). Every method immediately returns a dict like `{"ok": True}` without doing any real work.
 
-## Quick Start
-```python
-from src.core import Cropdoc
- instance = Cropdoc()
-r = instance.detect(input="test")
-```
+The project uses only Python standard library imports (time, logging, json, typing). There is no computer vision code, no image processing, no disease classification model, and no plant/leaf analysis logic.
 
-## CLI
-```bash
-python -m src status
-python -m src run --input "data"
-```
+## Structure
 
-## API
-| Method | Description |
-|--------|-------------|
-| `detect()` | Detect |
-| `scan()` | Scan |
-| `monitor()` | Monitor |
-| `alert()` | Alert |
-| `get_report()` | Get report |
-| `configure()` | Configure |
-| `get_stats()` | Get stats |
-| `reset()` | Reset |
+- `src/core.py` - Cropdoc class with stub methods
+- `tests/` - Test directory
 
-## Test
-```bash
-pytest tests/ -v
-```
+## Status
 
-## License
-(c) 2026 Officethree Technologies. All Rights Reserved.
+Scaffolding only. None of the advertised crop disease detection functionality exists.
